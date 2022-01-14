@@ -5,9 +5,15 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Objects;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "posts")
 @Component
 public class Post {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private String description;
