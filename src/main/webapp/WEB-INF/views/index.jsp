@@ -16,7 +16,7 @@
 <body>
 
 <div>
-    Login as : ${user.name}
+    Login as : ${user.username}
 </div>
 
 <a href="<c:url value='/create'/>">Добавить пост</a>

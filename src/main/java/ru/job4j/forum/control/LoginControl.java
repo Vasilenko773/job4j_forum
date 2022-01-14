@@ -2,6 +2,7 @@ package ru.job4j.forum.control;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
@@ -18,14 +19,14 @@ public class LoginControl {
     public String loginPage(@RequestParam(value = "error", required = false) String error,
                             @RequestParam(value = "logout", required = false) String logout,
                             Model model) {
-        String errorMessage = null;
+        String errorMessge = null;
         if (error != null) {
-            errorMessage = "Username or Password is incorrect !!";
+            errorMessge = "name or Password is incorrect !!";
         }
         if (logout != null) {
-            errorMessage = "You have been successfully logged out !!";
+            errorMessge = "You have been successfully logged out !!";
         }
-        model.addAttribute("errorMessage", errorMessage);
+        model.addAttribute("errorMessge", errorMessge);
         return "login";
     }
 

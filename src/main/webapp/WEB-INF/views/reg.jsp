@@ -13,7 +13,7 @@
     <table>
         <tr>
             <td>UserName:</td>
-            <td><input type='text' name='name'></td>
+            <td><input type='text' name='username'></td>
         </tr>
         <tr>
             <td>Password:</td>
