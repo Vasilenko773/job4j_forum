@@ -10,7 +10,6 @@ import ru.job4j.forum.service.PostService;
 @Controller
 public class IndexControl {
 
-
     @Autowired
     private PostService service;
 
