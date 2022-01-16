@@ -27,6 +27,12 @@ public class Post {
         return post;
     }
 
+    public Post() {
+    }
+
+    public Post(String name) {
+        this.name = name;
+    }
     public int getId() {
         return id;
     }
