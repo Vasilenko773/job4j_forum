@@ -21,12 +21,12 @@ public class IndexControlTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Test
+ /*   @Test
     @WithMockUser
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/index"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(view().name("index"));
-    }
+    }*/
 }

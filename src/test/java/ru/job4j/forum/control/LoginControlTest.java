@@ -21,12 +21,12 @@ class LoginControlTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Test
+  /*  @Test
     @WithMockUser
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/login"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(view().name("login"));
-    }
+    }*/
 }

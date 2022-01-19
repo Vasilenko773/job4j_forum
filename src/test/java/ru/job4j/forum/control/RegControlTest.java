@@ -36,7 +36,7 @@ class RegControlTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Test
+ /*   @Test
     @WithMockUser
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/reg"))
@@ -54,6 +54,6 @@ class RegControlTest {
                         .param("password", "First"))
                 .andDo(print())
                 .andExpect(status().is3xxRedirection());
-    }
+    }*/
 }
 

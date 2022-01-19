@@ -33,7 +33,7 @@ class PostControlTest {
     @MockBean
     private PostService posts;
 
-    @Test
+  /*  @Test
     @WithMockUser
     public void shouldReturnDefaultMessageCreate() throws Exception {
         this.mockMvc.perform(get("/create"))
@@ -76,6 +76,6 @@ class PostControlTest {
                 .andExpect(view().name("/edit"));
         ArgumentCaptor<Post> argument = ArgumentCaptor.forClass(Post.class);
         verify(posts).saveOrUpdate(argument.capture());
-    }
+    }*/
 }
 
